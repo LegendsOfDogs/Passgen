@@ -1,0 +1,57 @@
+body {
+ margin: 0;
+ padding: 0;
+ background: #3498db;
+}
+.gen-box {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #2f3640;
+ height: 40px;
+ border-radius: 40px;
+ padding: 10px;
+}
+.gen-box:hover > .gen-txt {
+ width: 200px;
+ padding: 0 6px;
+}
+
+.gen-box:hover > .gen-btn {
+ background: white;
+ color: black;
+}
+.gen-btn {
+ color: #3498db;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+ padding: 0;
+ border: none;
+}
+.gen-btn > i {
+ font-size: 20px;
+ color: #3498db;
+}
+.gen-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ width: 0px;
+ font-weight: bold;
+}﻿

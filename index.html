@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Password Generator</title>
+  </style>
+	<script src="generator.js" async=""></script>
+	<script>
+		window.onload = function (){
+			var generateButton = document.querySelector('#generate');
+			generateButton.addEventListener('click', function(){				
+				document.querySelector('#password').value = generate();
+			});
+		}
+	</script>	    
+ </head>
+ <body>
+  <div class="gen-box">
+   <button id="generate" class="gen-btn">
+   <i class="fas fa-sync-alt"></i>
+   </button>
+   <input id="password" class="gen-txt" type="text" name="" placeholder="Generate"/>
+  </div>
+ </body>
+</html>

@@ -7,8 +7,6 @@ function generate(){
 	password += word.charAt(0).toUpperCase() + word.slice(1);
 })
 password += Math.floor(Math.random()*9)
-	console.log(password)
+	return password
 })
-
-    return password;
 }

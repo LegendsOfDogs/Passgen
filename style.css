@@ -1,17 +1,20 @@
 body {
  margin: 0;
  padding: 0;
- background: #3498db;
+ background-image: url("https://i.imgur.com/B2T6Qkq.png");
+	background-color: #23305a;
 }
 .gen-box {
  position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
- background: #2f3640;
  height: 40px;
  border-radius: 40px;
  padding: 10px;
+ background-image: url("https://i.imgur.com/NOIpdyf.png");
+	background-color: #ffbb2f;
+	background-size: cover;
 }
 .gen-box:hover > .gen-txt {
  width: 200px;
@@ -54,4 +57,11 @@ body {
  line-height: 40px;
  width: 0px;
  font-weight: bold;
-}﻿
+}
+#password {
+ color: #23305a;
+	font-family: 'Lexend Deca', sans-serif;
+}
+#generate {
+	background-color: #23305a;
+}

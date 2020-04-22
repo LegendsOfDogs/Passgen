@@ -7,19 +7,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
   </style>
-	<script src="generator.js" async=""></script>
-	<script>
-		window.onload = function (){
-			var generateButton = document.querySelector('#generate');
-			generateButton.addEventListener('click', function(){				
-				document.querySelector('#password').value = generate();
-			});
-		}
-	</script>	    
+	<script src="generator.js" async=""></script>	    
  </head>
  <body>
   <div class="gen-box">
-   <button id="generate" class="gen-btn">
+   <button id="generate" class="gen-btn" onclick="generate()">
    <i class="fas fa-sync-alt"></i>
    </button>
    <input id="password" class="gen-txt" type="text" name="" placeholder="Output"/>

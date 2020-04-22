@@ -6,7 +6,7 @@ function generate(){
 	json.forEach(word => {
 	password += word.charAt(0).toUpperCase() + word.slice(1);
 })
-password += Math.floor(Math.random()*9)
+password += Math.floor(Math.random()*999)
 	return password
 })
 }

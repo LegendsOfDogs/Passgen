@@ -20,7 +20,7 @@ body {
  background-size: cover;
 }
 .gen-box:hover > .gen-txt {
- width: 200px;
+ width: 360px;
  padding: 0 6px;
 }
 

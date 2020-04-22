@@ -1,8 +1,10 @@
-function generate( length = 15 ){
-    var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+function generate(){
+    var length = document.getElementById('lengthRange').value
+    
+    var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ';
+    var lowercase = 'abcdefghijklmnopqrstuvwxyzåäö';
     var numbers = '0123456789';
-    var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
+    var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{}~';
 
     var all = uppercase + lowercase + numbers + symbols;
 

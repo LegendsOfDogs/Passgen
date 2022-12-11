@@ -1,17 +1,12 @@
-function generate( length = 15 ){
-    var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var lowercase = 'abcdefghijklmnopqrstuvwxyz';
-    var numbers = '0123456789';
-    var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
-
-    var all = uppercase + lowercase + numbers + symbols;
-
-    var password = '';
-
-    for (var index = 0; index < length; index++) {
-        var character = Math.floor(Math.random() * all.length);
-        password += all.substring(character, character + 1);
-    }
-
-    return password;
+function generate() {
+    fetch('https://random-word-api.herokuapp.com/word?number=3')
+        .then(response => response.json())
+        .then(json => {
+            let password = ""
+            json.forEach(word => {
+                password += word.charAt(0).toUpperCase() + word.slice(1);
+            })
+            password += Math.floor(Math.random() * 999)
+            document.getElementById('password').value = password
+        })
 }
